@@ -8,7 +8,7 @@ export default function About({language}) {
             {language ? <>
                 <h1>Olá! Meu nome é Vinicius Pedroso dos Reis e tenho paixão pela área tecnológica, 
             tanto na minha vida pessoal quanto na minha construção de carreira. Próximo de
-            me formar em engenharia elétrica, busco estágio e experiência primariamente nas
+            me formar em engenharia elétrica, busco estágio e experiência em especial nas
             áreas de desenvolvimento de novas tecnologias, uso de ferramentas digitais, desenvolvedor web or
             automação de processos.</h1>
             </> :
@@ -47,6 +47,18 @@ const Container = styled.div`
         font-weight: 400;
         font-family: 'Times New Roman', Times, serif;
         color: white;
+    }
+
+
+    @media only screen and (max-width: 900px) {
+        h1{
+            font-size: 3vw;
+        }
+
+        img {
+            width: 32vw;
+            height: 32vw;
+        }
     }
 `
 

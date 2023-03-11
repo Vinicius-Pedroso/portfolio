@@ -75,6 +75,22 @@ const Container = styled.div`
     img:hover {
         cursor: pointer;
     }
+
+    @media only screen and (max-width: 900px) {
+
+        img {
+            width: 4vw;
+            height: 4vw;
+        }
+
+        h1{
+            font-size: 4vw;
+        }
+
+        h2{
+            font-size: 2.2vw;
+        }
+    }
 `
 
 
