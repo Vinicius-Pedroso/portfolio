@@ -1,18 +1,29 @@
 import { createGlobalStyle } from "styled-components";
 import About from "./components/about";
+import Skills from "./components/skills";
 import Header from "./components/header";
+import Projects from "./components/projects";
+import Education from "./components/education";
+import Contacts from "./components/contacts";
 
-function App() {
+import {useState } from "react";
+
+export default function App() {
+
+  const [languageEnglish, setLanguageEnglish] = useState(true)
+
   return (
     <>
       <GlobalStyle/>
-      <Header/>
-      <About/>
+      <Header language={languageEnglish} setLanguage={setLanguageEnglish}/>
+      <About language={languageEnglish}/>
+      {/* <Education />
+      <Skills />
+      <Projects />
+      <Contacts /> */}
     </>
   );
 }
-
-export default App;
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -23,6 +34,5 @@ const GlobalStyle = createGlobalStyle`
   }
   body{
     background-color: #080808;
-    font-family: "Lato", sans-serif;
   }
 `;
