@@ -17,8 +17,8 @@ export default function Header({language, setLanguage}) {
         <>
             <div>
             <h2>About</h2>
-            <h2>Skills</h2>
             <h2>Education</h2>
+            <h2>Skills</h2>
             <h2>Projects</h2>
             <h2>Contacts</h2>
             <img src="/assets/brasil.png" alt="brasil logo" onClick={() => setLanguage(true)}/>
@@ -78,6 +78,8 @@ const Container = styled.div`
 
     @media only screen and (max-width: 900px) {
 
+        height: 90px;
+
         img {
             width: 4vw;
             height: 4vw;
@@ -90,6 +92,19 @@ const Container = styled.div`
         h2{
             font-size: 2.2vw;
         }
+    }
+
+    @media only screen and (max-width: 700px) {
+        height: 70px;
+    }
+    @media only screen and (max-width: 500px) {
+        height: 50px;
+    }
+    @media only screen and (max-width: 350px) {
+        height: 35px;
+    }
+    @media only screen and (max-width: 280px) {
+        height: 28px;
     }
 `
 
