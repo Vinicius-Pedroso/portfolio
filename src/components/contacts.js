@@ -4,19 +4,22 @@ export default function Contacts() {
   return (
     <Container>
         <h1>Contacts</h1>
-        <h2>Ganhar dinheiro, tomar café e jogar smash</h2>
+        <h2>GitHub</h2>
+        <h2>Linkedin</h2>
+        <h2>Currículo</h2>
+        
         
     </Container>
   );
 }
 
-
 const Container = styled.div`
-    height: auto;
-    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: auto;
+    width: 100%;
     background-color: #080808;
 
     h1{

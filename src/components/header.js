@@ -1,16 +1,46 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import React, { useRef } from 'react';
 
 export default function Header({language, setLanguage}) {
+    
+    const skillRef = useRef(null);
+        const aboutRef = useRef(null);
+        const contactRef = useRef(null);
+        const educationRef = useRef(null);
+        const projectsRef = useRef(null);
+      
+        const scrollToSkill = () => {
+          scrollToComponent(skillRef);
+        };
+      
+        const scrollToAbout = () => {
+          scrollToComponent(aboutRef);
+        };
+        
+        const scrollToContact = () => {
+          scrollToComponent(contactRef);
+        };
+      
+        const scrollToEducation = () => {
+          scrollToComponent(educationRef);
+        };
+      
+        const scrollToProjects = () => {
+          scrollToComponent(projectsRef);
+        };
+    
+      
   return (
     <Container>
         <h1>Vinicius Pedroso dos Reis</h1>
         {language? <>
             <div>
-            <h2>Sobre mim</h2>
-            <h2>Educação</h2>
-            <h2>Habilidades</h2>
-            <h2>Projetos</h2>
-            <h2>Contatos</h2>
+            <h2 onClick={scrollToAbout}>Sobre mim</h2>
+            <h2 onClick={scrollToEducation}>Educação</h2>
+            <h2 onClick={scrollToSkill}>Habilidades</h2>
+            <h2 onClick={scrollToProjects}>Projetos</h2>
+            <h2 onClick={scrollToContact}>Contatos</h2>
+            <img src="/assets/brasil.png" alt="brasil logo" onClick={() => setLanguage(true)}/>
             <img src="/assets/england.png" alt="england logo" onClick={() => setLanguage(false)}/>
             </div>
         </> :
@@ -22,14 +52,21 @@ export default function Header({language, setLanguage}) {
             <h2>Projects</h2>
             <h2>Contacts</h2>
             <img src="/assets/brasil.png" alt="brasil logo" onClick={() => setLanguage(true)}/>
+            <img src="/assets/england.png" alt="england logo" onClick={() => setLanguage(false)}/>
             </div>
         </>}
     </Container>
   );
 }
 
+function scrollToComponent(component) {
+  component.current.scrollIntoView({ behavior: 'smooth' });
+}
+
+  
+
 const Container = styled.div`
-    height: 15vh;
+    height: 8vw;
     width: 100%;
     border-bottom: 1px solid white;
     display: flex;
@@ -52,7 +89,9 @@ const Container = styled.div`
     }
 
     h2 {
+        width: auto;
         display: flex;
+        flex-direction: row;
         align-items: center;
         padding-left: 10px;
         font-size: 20px;
@@ -107,11 +146,3 @@ const Container = styled.div`
         height: 28px;
     }
 `
-
-
-// {language ? <>
-    
-// </> :
-// <>
-
-// </>}

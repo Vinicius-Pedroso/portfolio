@@ -10,14 +10,12 @@ export default function Projects() {
   );
 }
 
-
 const Container = styled.div`
     height: 85vh;
-    width: 100%;
-    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: #333333;
 
     h1{

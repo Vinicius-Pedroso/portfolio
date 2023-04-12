@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default function About({language}) {
   return (
     <Container>
-        <img src="/assets/chad.png" alt="Chad"></img>
+        <img src="/assets/vini.jpeg" alt="Chad"></img>
         <div>
             {language ? <>
                 <h1>Olá! Meu nome é Vinicius Pedroso dos Reis e tenho paixão pela área tecnológica, 
@@ -14,7 +14,7 @@ export default function About({language}) {
             </> :
             <>
                 <h1>Hello! My name is Vinicius Pedroso dos Reis and I'm passionate about technology for both, my professional life and my personal as well.
-            Graduating soon in Electrical Engineering at USP, I'm currently searching for a Job or a Intership in any technological field, but mostly
+            Graduating soon in Electrical Engineering at USP, I'm currently searching for a Job or an Intership in any technological field, but mostly
             in research & development of new technology, working with digital tools, web development or process automation</h1>
             </>}            
         </div>

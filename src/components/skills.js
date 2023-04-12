@@ -1,10 +1,14 @@
 import styled from "styled-components";
+import React, { useRef } from 'react';
 
 export default function Skills() {
+
+    const skillRef = useRef(null);
+
   return (
-    <Container>
+    <Container ref = {skillRef}>
         <h1>Skills</h1>
-        <h2>Ganhar dinheiro, tomar café e jogar smash</h2>
+        <h2></h2>
         
     </Container>
   );
@@ -13,11 +17,12 @@ export default function Skills() {
 
 const Container = styled.div`
     height: 85vh;
-    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: #080808;
+    
 
     h1{
         padding-top: 10vh;

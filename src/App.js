@@ -5,7 +5,6 @@ import Header from "./components/header";
 import Projects from "./components/projects";
 import Education from "./components/education";
 import Contacts from "./components/contacts";
-
 import {useState } from "react";
 
 export default function App() {
@@ -17,10 +16,10 @@ export default function App() {
       <GlobalStyle/>
       <Header language={languageEnglish} setLanguage={setLanguageEnglish}/>
       <About language={languageEnglish}/>
-      {/* <Education />
-      <Skills />
-      <Projects />
-      <Contacts /> */}
+      <Education language={languageEnglish}/>
+      <Skills language={languageEnglish}/>
+      <Projects language={languageEnglish}/>
+      <Contacts language={languageEnglish}/>
     </>
   );
 }
