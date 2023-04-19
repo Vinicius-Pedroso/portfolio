@@ -5,7 +5,7 @@ export default function About({language}) {
     <Container>
         <img src="/assets/vini.jpeg" alt="Chad"></img>
         <div>
-            {language ? <>
+            {!language ? <>
                 <h1>Olá! Meu nome é Vinicius Pedroso dos Reis e tenho paixão pela área tecnológica, 
             tanto na minha vida pessoal quanto na minha construção de carreira. Próximo de
             me formar em engenharia elétrica, busco estágio e experiência em especial nas

@@ -1,47 +1,20 @@
 import styled from "styled-components";
-import React, { useRef } from 'react';
+import React from 'react';
 
 export default function Header({language, setLanguage}) {
-    
-    const skillRef = useRef(null);
-        const aboutRef = useRef(null);
-        const contactRef = useRef(null);
-        const educationRef = useRef(null);
-        const projectsRef = useRef(null);
-      
-        const scrollToSkill = () => {
-          scrollToComponent(skillRef);
-        };
-      
-        const scrollToAbout = () => {
-          scrollToComponent(aboutRef);
-        };
-        
-        const scrollToContact = () => {
-          scrollToComponent(contactRef);
-        };
-      
-        const scrollToEducation = () => {
-          scrollToComponent(educationRef);
-        };
-      
-        const scrollToProjects = () => {
-          scrollToComponent(projectsRef);
-        };
-    
-      
+
   return (
     <Container>
         <h1>Vinicius Pedroso dos Reis</h1>
-        {language? <>
+        {!language? <>
             <div>
-            <h2 onClick={scrollToAbout}>Sobre mim</h2>
-            <h2 onClick={scrollToEducation}>Educação</h2>
-            <h2 onClick={scrollToSkill}>Habilidades</h2>
-            <h2 onClick={scrollToProjects}>Projetos</h2>
-            <h2 onClick={scrollToContact}>Contatos</h2>
-            <img src="/assets/brasil.png" alt="brasil logo" onClick={() => setLanguage(true)}/>
-            <img src="/assets/england.png" alt="england logo" onClick={() => setLanguage(false)}/>
+            <h2>Sobre mim</h2>
+            <h2>Educação</h2>
+            <h2>Habilidades</h2>
+            <h2>Experiências</h2>
+            <h2>Contatos</h2>
+            <img src="/assets/brasil.png" alt="brasil logo" onClick={() => setLanguage(false)}/>
+            <img src="/assets/england.png" alt="england logo" onClick={() => setLanguage(true)}/>
             </div>
         </> :
         <>
@@ -49,21 +22,15 @@ export default function Header({language, setLanguage}) {
             <h2>About</h2>
             <h2>Education</h2>
             <h2>Skills</h2>
-            <h2>Projects</h2>
+            <h2>Experience</h2>
             <h2>Contacts</h2>
-            <img src="/assets/brasil.png" alt="brasil logo" onClick={() => setLanguage(true)}/>
-            <img src="/assets/england.png" alt="england logo" onClick={() => setLanguage(false)}/>
+            <img src="/assets/brasil.png" alt="brasil logo" onClick={() => setLanguage(false)}/>
+            <img src="/assets/england.png" alt="england logo" onClick={() => setLanguage(true)}/>
             </div>
         </>}
     </Container>
   );
 }
-
-function scrollToComponent(component) {
-  component.current.scrollIntoView({ behavior: 'smooth' });
-}
-
-  
 
 const Container = styled.div`
     height: 8vw;
@@ -74,7 +41,6 @@ const Container = styled.div`
     justify-content: space-between;
     position: fixed;
     background-color: #333333;
-
     h1{
         padding: 35px 0px 35px 3%;
         font-size: 40px;
@@ -82,12 +48,10 @@ const Container = styled.div`
         font-family: 'Times New Roman', Times, serif;
         color: white;
     }
-
     div {
         display: flex;
         padding-right: 5%;
     }
-
     h2 {
         width: auto;
         display: flex;
@@ -100,12 +64,10 @@ const Container = styled.div`
         color: white;
         
     }
-
     h2:hover {
         color: #f1c40f;
         cursor: pointer;
     }
-
     img {
         padding: 35px 0px 35px 3%;
         width: 32px;
@@ -114,25 +76,19 @@ const Container = styled.div`
     img:hover {
         cursor: pointer;
     }
-
     @media only screen and (max-width: 900px) {
-
         height: 90px;
-
         img {
             width: 4vw;
             height: 4vw;
         }
-
         h1{
             font-size: 4vw;
         }
-
         h2{
             font-size: 2.2vw;
         }
     }
-
     @media only screen and (max-width: 700px) {
         height: 70px;
     }

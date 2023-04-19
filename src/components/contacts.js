@@ -1,16 +1,23 @@
 import styled from "styled-components";
 
-export default function Contacts() {
-  return (
-    <Container>
-        <h1>Contacts</h1>
-        <h2>GitHub</h2>
-        <h2>Linkedin</h2>
-        <h2>Currículo</h2>
-        
-        
-    </Container>
-  );
+export default function Contacts({language}) {
+    return (
+        <Container>
+            {!language ? <>
+                    <h1>Contatos</h1>
+                    <h2>GitHub</h2>
+                    <h2>Linkedin</h2>
+                    <h2>Currículo</h2>
+                </> :
+                <>
+                    <h1>Contacts</h1>
+                    <h2>GitHub</h2>
+                    <h2>Linkedin</h2>
+                    <h2>Curriculum</h2>
+                </>
+            }
+        </Container>
+    );
 }
 
 const Container = styled.div`
@@ -20,7 +27,7 @@ const Container = styled.div`
     flex-direction: column;
     height: auto;
     width: 100%;
-    background-color: #080808;
+    bbackground-color: #333333;
 
     h1{
         padding-top: 10vh;

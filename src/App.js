@@ -1,10 +1,10 @@
 import { createGlobalStyle } from "styled-components";
-import About from "./components/about";
-import Skills from "./components/skills";
-import Header from "./components/header";
-import Projects from "./components/projects";
-import Education from "./components/education";
-import Contacts from "./components/contacts";
+import About from "./components/about.js";
+import Skills from "./components/skills.js";
+import Header from "./components/header.js";
+import Experience from "./components/experience.js";
+import Education from "./components/education.js";
+import Contacts from "./components/contacts.js";
 import {useState } from "react";
 
 export default function App() {
@@ -18,7 +18,7 @@ export default function App() {
       <About language={languageEnglish}/>
       <Education language={languageEnglish}/>
       <Skills language={languageEnglish}/>
-      <Projects language={languageEnglish}/>
+      <Experience language={languageEnglish}/>
       <Contacts language={languageEnglish}/>
     </>
   );

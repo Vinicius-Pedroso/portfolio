@@ -1,54 +1,53 @@
 import styled from "styled-components";
 
-export default function Education(language) {
+export default function Education({language}) {
     console.log(language)
     return (
         <Container>
-            {language ? <>
+            {!language ? <>
                 <h1>Educação</h1>
             </> :
-                <>
-                    <h1>Education</h1>
-                </>}
+            <>
+                <h1>Education</h1>
+            </>}
             <div>
                 <div>
-                    <img src="/assets/poli.png" />
-                    {language ? <>
+                    <img src="/assets/poli.png" alt="Logo Poli"/>
+                    {!language ? <>
                         <h1>Escola politécnica da USP</h1>
                         <h2>Engenharia Elétrica</h2>
                     </> :
-                        <>
-                            <h1>Escola politécnica da USP</h1>
-                            <h2>Electrical Engineering</h2>
-                        </>}
+                    <>
+                        <h1>Escola politécnica da USP</h1>
+                        <h2>Electrical Engineering</h2>
+                    </>}
                 </div>
                 <div>
-                    <img src="/assets/driven.png" />
+                    <img src="/assets/driven.png" alt="Logo Driven"/>
                     {language ? <>
                         <h1>Driven Education</h1>
                         <h2>Desenvolvedor Web Fullstack</h2>
                     </> :
-                        <>
-                            <h1>Driven Education</h1>
-                            <h2>Fullstack Web Developer</h2>
-                        </>}
+                    <>
+                        <h1>Driven Education</h1>
+                        <h2>Fullstack Web Developer</h2>
+                    </>}
                 </div>
                 <div>
-                    <img src="/assets/stanford.png" />
+                    <img src="/assets/stanford.png" alt="Logo Stanford"/>
                     {language ? <>
                         <h1>Stanford University</h1>
                         <h2>Supervised Machine Learning</h2>
                     </> :
-                        <>
-                            <h1>Stanford University</h1>
-                            <h2>Supervised Machine Learning</h2>
-                        </>}
+                    <>
+                        <h1>Stanford University</h1>
+                        <h2>Supervised Machine Learning</h2>
+                    </>}
                 </div>
             </div>
         </Container>
     );
 }
-
 
 const Container = styled.div`
     height: 85vh;
@@ -58,6 +57,16 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     background-color: #555555;
+
+    div {
+        padding-top: 3%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        div{
+            flex-direction: column;
+        }
+    }
 
     h1{
         margin-top: 10vh;
@@ -69,15 +78,7 @@ const Container = styled.div`
         text-decoration-color: silver;
     }
 
-    div {
-        padding-top: 3%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        div{
-            flex-direction: column;
-        }
-    }
+    
 
     h2 {
         padding-top: 5vh;
@@ -93,8 +94,9 @@ const Container = styled.div`
         font-weight: 700;
         font-family: 'Times New Roman', Times, serif;
         color: white;
-        text-decoration: underline;
+        text-decoration: underline 2px;
         text-decoration-color: silver;
+        
     }
 
     img {

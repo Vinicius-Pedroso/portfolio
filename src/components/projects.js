@@ -1,13 +1,17 @@
 import styled from "styled-components";
 
-export default function Projects() {
-  return (
-    <Container>
-        <h1>Projects</h1>
-        <h2>Ganhar dinheiro, tomar café e jogar smash</h2>
-        
-    </Container>
-  );
+export default function Projects({language}) {
+    return (
+        <Container>
+            {!language ? <>
+                <h1>Projetos</h1>
+                </> :
+                <>
+                    <h1>Projects</h1>
+                </>
+            }
+        </Container>
+    );
 }
 
 const Container = styled.div`
@@ -16,7 +20,7 @@ const Container = styled.div`
     padding-right: 5%;
     display: flex;
     flex-direction: column;
-    background-color: #333333;
+    background-color: #555555;;
 
     h1{
         padding-top: 10vh;
