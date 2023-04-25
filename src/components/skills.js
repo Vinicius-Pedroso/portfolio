@@ -36,13 +36,13 @@ export default function Skills({ language }) {
                     </div>
                     <Language>
                         <div>
-                            
+
                             <img src="/assets/html.png" alt="Logo HTML" />
 
-                            
+
                             <img src="/assets/css.webp" alt="Logo CSS" />
 
-                            
+
                             <img src="/assets/JavaScript.png" alt="Logo Javascript" />
 
                         </div>
@@ -63,29 +63,61 @@ export default function Skills({ language }) {
                 </Column>
             </> :
                 <>
-                    <h1>Skills</h1>
-                    <h4>Hard Skills</h4>
-                    <h2>Fullstack</h2>
-                    <h3>- CSS</h3>
-                    <h3>- HTML</h3>
-                    <h3>- Javascript</h3>
-                    <h3>- Typescript</h3>
-                    <h3>- React</h3>
-                    <h2>Database</h2>
-                    <h3>- MongoDB</h3>
-                    <h3>- PostgreSQL</h3>
-                    <h3>- Prisma</h3>
-                    <h2>AI Techniques</h2>
-                    <h3>- Supervised Machine Learning</h3>
-                    <h2>Engineering Techniques</h2>
-                    <h3>- Advanced Calculus</h3>
-                    <h3>- Methods with Statistics and Probability</h3>
-                    <h3>- Basic Hardware Handling Skills</h3>
-                    <h4>Soft Skills</h4>
-                    <h3>- Teamwork</h3>
-                    <h3>- Receptive to Feedback</h3>
-                    <h3>- Problem Solving</h3>
-                    <h5>- Flexibility and Adaptation</h5>
+                    <h1>Habilidades</h1>
+                    <Column>
+
+                        <div>
+                            <h4>Hard Skills</h4>
+                            <h2>Fullstack</h2>
+                            <h3>- CSS</h3>
+                            <h3>- HTML</h3>
+                            <h3>- Javascript</h3>
+                            <h3>- Typescript</h3>
+                            <h3>- React</h3>
+                            <h2>Banco de dados</h2>
+                            <h3>- MongoDB</h3>
+                            <h3>- PostgreSQL</h3>
+                            <h3>- Prisma</h3>
+                            <h2>Técnicas com IAs</h2>
+                            <h3>- Supervised Machine Learning</h3>
+                            <h2>Técnicas de Engenharia</h2>
+                            <h3>- Cálculo avançado</h3>
+                            <h3>- Métodos com estátistica e probabilidade</h3>
+                            <h3>- Várias linguagens de programação</h3>
+                            <h3>- Noções de manuseio com Hardware</h3>
+                            <h4>Soft Skills</h4>
+                            <h3>- Trabalho em equipe</h3>
+                            <h3>- Receptivo à feedbacks</h3>
+                            <h3>- Solução de problemas </h3>
+                            <h5>- Flexibilidade e Adaptação</h5>
+                        </div>
+                        <Language>
+                            <div>
+
+                                <img src="/assets/html.png" alt="Logo HTML" />
+
+
+                                <img src="/assets/css.webp" alt="Logo CSS" />
+
+
+                                <img src="/assets/JavaScript.png" alt="Logo Javascript" />
+
+                            </div>
+                            <div>
+                                <img src="/assets/C.png" alt="Logo C++" />
+                                <img src="/assets/python.png" alt="Logo Python" />
+                                <img src="/assets/Typescript.png" alt="Logo Typescript" />
+                            </div>
+                            <div>
+                                <img src="/assets/react.png" alt="Logo React" />
+                                <img src="/assets/prisma.png" alt="Logo Prisma" />
+                            </div>
+                            <div>
+                                <img src="/assets/postgres.png" alt="Logo MongoDB" />
+                                <img src="/assets/mongo.jpeg" alt="Logo PostgresSQL" />
+                            </div>
+                        </Language>
+                    </Column>
                 </>}
         </Container>
     );

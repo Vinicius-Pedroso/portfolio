@@ -6,16 +6,15 @@ export default function Experience({ language }) {
             {!language ? <>
                 <h1>Experiências</h1>
                 <div>
-                <div>
-                        <img src="/assets/CEE.png" alt="Logo CEE"/>
+                    <div>
+                        <img src="/assets/CEE.png" alt="Logo CEE" />
                         <h5>Diretor Acadêmico do CEE</h5>
                         <h2>Organização de Eventos</h2>
                         <h3>- Protecs</h3>
                         <h3>- SEnEC</h3>
                         <h3>Divulgação de eventos e Informações</h3>
                         <h3>Representação dos interesses dos alunos diante o corpo acadêmico da faculdade</h3>
-                    
-                    <h5>Projetos</h5>
+                        <h5>Projetos</h5>
                         <h2>Front-End</h2>
                         <h3>- Cineflex</h3>
                         <h3>- E-commerce</h3>
@@ -28,6 +27,26 @@ export default function Experience({ language }) {
             </> :
                 <>
                     <h1>Experience</h1>
+                    <div>
+                        <div>
+                            <img src="/assets/CEE.png" alt="CEE Logo" />
+                            <h5>CEE Academic Director</h5>
+                            <h2>Events organization</h2>
+                            <h3>- Protecs</h3>
+                            <h3>- SEnEC</h3>
+                            <h3>Event promotion and information dissemination</h3>
+                            <h3>Representation of student interests to the academic body of the college</h3>
+                            <h5>Projects</h5>
+                            <h2>Front-End</h2>
+                            <h3>- Cineflex</h3>
+                            <h3>- E-commerce</h3>
+                            <h2>Back-End</h2>
+                            <h3>- Drivencare</h3>
+                            <h2>Fullstack</h2>
+                            <h4>- Linkr</h4>
+                        </div>
+                    </div>
+
                 </>
             }
         </Container>
