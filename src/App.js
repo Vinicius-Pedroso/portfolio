@@ -25,12 +25,6 @@ export default function App() {
 }
 
 const GlobalStyle = createGlobalStyle`
-  *{
-    color: white;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-  }
   body{
     background-color: #080808;
   }

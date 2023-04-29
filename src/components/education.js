@@ -81,8 +81,6 @@ const Container = styled.div`
         font-weight: 700;
         font-family: 'Times New Roman', Times, serif;
         color: white;
-        text-decoration: underline;
-        text-decoration-color: silver;
     }
 
     

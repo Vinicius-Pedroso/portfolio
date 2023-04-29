@@ -63,7 +63,7 @@ export default function Skills({ language }) {
                 </Column>
             </> :
                 <>
-                    <h1>Habilidades</h1>
+                    <h1>Skills</h1>
                     <Column>
 
                         <div>
@@ -74,22 +74,22 @@ export default function Skills({ language }) {
                             <h3>- Javascript</h3>
                             <h3>- Typescript</h3>
                             <h3>- React</h3>
-                            <h2>Banco de dados</h2>
+                            <h2>Database</h2>
                             <h3>- MongoDB</h3>
                             <h3>- PostgreSQL</h3>
                             <h3>- Prisma</h3>
-                            <h2>Técnicas com IAs</h2>
+                            <h2>AI Techniques</h2>
                             <h3>- Supervised Machine Learning</h3>
-                            <h2>Técnicas de Engenharia</h2>
-                            <h3>- Cálculo avançado</h3>
-                            <h3>- Métodos com estátistica e probabilidade</h3>
-                            <h3>- Várias linguagens de programação</h3>
-                            <h3>- Noções de manuseio com Hardware</h3>
+                            <h2>Engineering Techniques</h2>
+                            <h3>- Advanced Calculus</h3>
+                            <h3>- Statistical and Probabilistic Methods</h3>
+                            <h3>- Various Programming Languages</h3>
+                            <h3>- Hardware Handling Notions</h3>
                             <h4>Soft Skills</h4>
-                            <h3>- Trabalho em equipe</h3>
-                            <h3>- Receptivo à feedbacks</h3>
-                            <h3>- Solução de problemas </h3>
-                            <h5>- Flexibilidade e Adaptação</h5>
+                            <h3>- Teamwork</h3>
+                            <h3>- Open to Feedback</h3>
+                            <h3>- Problem Solving</h3>
+                            <h5>- Flexibility and Adaptation</h5>
                         </div>
                         <Language>
                             <div>
@@ -111,6 +111,7 @@ export default function Skills({ language }) {
                             <div>
                                 <img src="/assets/react.png" alt="Logo React" />
                                 <img src="/assets/prisma.png" alt="Logo Prisma" />
+                                <img src="/assets/jest.png" alt="Logo jest" />
                             </div>
                             <div>
                                 <img src="/assets/postgres.png" alt="Logo MongoDB" />
@@ -197,16 +198,4 @@ const Language = styled.div`
         height: 7vw;
         width: 12vw;
     }
-`
-
-const Circle = styled.div`
-    height: 10vw;
-    width: 10vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-item: center;
-    border-radius: 100%;
-    border: 1px solid silver;
-     background-color: white;
 `
