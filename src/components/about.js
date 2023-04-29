@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default function About({language}) {
   return (
-    <Container>
+    <Container id='About'>
         <img src="/assets/vini.jpeg" alt="Chad"></img>
         <div>
             {!language ? <>

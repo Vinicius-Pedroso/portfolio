@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default function Education({language}) {
     console.log(language)
     return (
-        <Container>
+        <Container id='Education'>
             {!language ? <>
                 <h1>Educação</h1>
             </> :
@@ -14,12 +14,12 @@ export default function Education({language}) {
                 <div>
                     <img src="/assets/poli.png" alt="Logo Poli"/>
                     {!language ? <>
-                        <h1>Escola politécnica da USP</h1>
+                        <h1>Escola Politécnica da USP</h1>
                         <h2>Bacharelado</h2>
                         <h3>Engenharia Elétrica</h3>
                     </> :
                     <>
-                        <h1>Escola politécnica da USP</h1>
+                        <h1>Escola Politécnica da USP</h1>
                         <h2>Bachelor</h2>
                         <h3>Electrical Engineering</h3>
                     </>}

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default function Contacts({ language }) {
     return (
-        <Container>
+        <Container id='Contacts'>
             {!language ? <>
                 <h1>Contatos</h1>
                 <h2><a href="https://github.com/Vinicius-Pedroso" target="_blank">GitHub</a></h2>

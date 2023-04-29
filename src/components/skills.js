@@ -4,7 +4,7 @@ import React from 'react';
 export default function Skills({ language }) {
 
     return (
-        <Container >
+        <Container id='Skills'>
             {!language ? <>
                 <h1>Habilidades</h1>
                 <Column>

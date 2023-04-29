@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link} from 'react-scroll';
 import React from 'react';
 
 export default function Header({language, setLanguage}) {
@@ -8,22 +9,22 @@ export default function Header({language, setLanguage}) {
         <h1>Vinicius Pedroso dos Reis</h1>
         {!language? <>
             <div>
-            <h2>Sobre mim</h2>
-            <h2>Educação</h2>
-            <h2>Habilidades</h2>
-            <h2>Experiências</h2>
-            <h2>Contatos</h2>
+            <h2><Link to="About" spy={true} smooth={true} offset={-80} duration={500}>Sobre mim</Link></h2>
+            <h2><Link to="Education" spy={true} smooth={true} offset={-80} duration={500}>Educação</Link></h2>
+            <h2><Link to="Skills" spy={true} smooth={true} offset={-80} duration={500}>Habilidades</Link></h2>
+            <h2><Link to="Experience" spy={true} smooth={true} offset={-80} duration={500}>Experiências</Link></h2>
+            <h2><Link to="Contacts" spy={true} smooth={true} offset={-80} duration={500}>Contatos</Link></h2>
             <img src="/assets/brasil.png" alt="brasil logo" onClick={() => setLanguage(false)}/>
             <img src="/assets/england.png" alt="england logo" onClick={() => setLanguage(true)}/>
             </div>
         </> :
         <>
             <div>
-            <h2>About</h2>
-            <h2>Education</h2>
-            <h2>Skills</h2>
-            <h2>Experience</h2>
-            <h2>Contacts</h2>
+            <h2><Link to="About" spy={true} smooth={true} offset={-80} duration={500}>About</Link></h2>
+            <h2><Link to="Education" spy={true} smooth={true} offset={-80} duration={500}>Education</Link></h2>
+            <h2><Link to="Skills" spy={true} smooth={true} offset={-80} duration={500}>Skills</Link></h2>
+            <h2><Link to="Experience" spy={true} smooth={true} offset={-80} duration={500}>Experience</Link></h2>
+            <h2><Link to="Contacts" spy={true} smooth={true} offset={-80} duration={500}>Contacts</Link></h2>
             <img src="/assets/brasil.png" alt="brasil logo" onClick={() => setLanguage(false)}/>
             <img src="/assets/england.png" alt="england logo" onClick={() => setLanguage(true)}/>
             </div>
