@@ -65,7 +65,7 @@ const Container = styled.div`
         color: white;
         
     }
-    h2:hover {
+    a:hover {
         color: #f1c40f;
         cursor: pointer;
     }

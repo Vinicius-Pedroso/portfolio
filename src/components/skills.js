@@ -54,6 +54,7 @@ export default function Skills({ language }) {
                         <div>
                             <img src="/assets/react.png" alt="Logo React" />
                             <img src="/assets/prisma.png" alt="Logo Prisma" />
+                            <img src="/assets/jest.png" alt="Logo jest" />
                         </div>
                         <div>
                             <img src="/assets/postgres.png" alt="Logo MongoDB" />
