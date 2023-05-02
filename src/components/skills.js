@@ -35,31 +35,7 @@ export default function Skills({ language }) {
                         <h5>- Flexibilidade e Adaptação</h5>
                     </div>
                     <Language>
-                        <div>
-
-                            <img src="/assets/html.png" alt="Logo HTML" />
-
-
-                            <img src="/assets/css.webp" alt="Logo CSS" />
-
-
-                            <img src="/assets/JavaScript.png" alt="Logo Javascript" />
-
-                        </div>
-                        <div>
-                            <img src="/assets/C.png" alt="Logo C++" />
-                            <img src="/assets/python.png" alt="Logo Python" />
-                            <img src="/assets/Typescript.png" alt="Logo Typescript" />
-                        </div>
-                        <div>
-                            <img src="/assets/react.png" alt="Logo React" />
-                            <img src="/assets/prisma.png" alt="Logo Prisma" />
-                            <img src="/assets/jest.png" alt="Logo jest" />
-                        </div>
-                        <div>
-                            <img src="/assets/postgres.png" alt="Logo MongoDB" />
-                            <img src="/assets/mongo.jpeg" alt="Logo PostgresSQL" />
-                        </div>
+                    <img src="/assets/vini_logos.png" alt="Logos" />
                     </Language>
                 </Column>
             </> :
@@ -93,31 +69,7 @@ export default function Skills({ language }) {
                             <h5>- Flexibility and Adaptation</h5>
                         </div>
                         <Language>
-                            <div>
-
-                                <img src="/assets/html.png" alt="Logo HTML" />
-
-
-                                <img src="/assets/css.webp" alt="Logo CSS" />
-
-
-                                <img src="/assets/JavaScript.png" alt="Logo Javascript" />
-
-                            </div>
-                            <div>
-                                <img src="/assets/C.png" alt="Logo C++" />
-                                <img src="/assets/python.png" alt="Logo Python" />
-                                <img src="/assets/Typescript.png" alt="Logo Typescript" />
-                            </div>
-                            <div>
-                                <img src="/assets/react.png" alt="Logo React" />
-                                <img src="/assets/prisma.png" alt="Logo Prisma" />
-                                <img src="/assets/jest.png" alt="Logo jest" />
-                            </div>
-                            <div>
-                                <img src="/assets/postgres.png" alt="Logo MongoDB" />
-                                <img src="/assets/mongo.jpeg" alt="Logo PostgresSQL" />
-                            </div>
+                        <img src="/assets/vini_logos.png" alt="Logos" />
                         </Language>
                     </Column>
                 </>}
@@ -196,7 +148,7 @@ const Language = styled.div`
 
     img {
         padding-top: 1.5vw;
-        height: 7vw;
-        width: 12vw;
+        height: 35vw;
+        width: 45vw;
     }
 `

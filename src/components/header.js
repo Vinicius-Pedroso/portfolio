@@ -9,7 +9,7 @@ export default function Header({language, setLanguage}) {
         <h1>Vinicius Pedroso dos Reis</h1>
         {!language? <>
             <div>
-            <h2><Link to="About" spy={true} smooth={true} offset={-80} duration={500}>Sobre mim</Link></h2>
+            <h2><Link to="About" spy={true} smooth={true} offset={-80} duration={500}>Introdução</Link></h2>
             <h2><Link to="Education" spy={true} smooth={true} offset={-80} duration={500}>Educação</Link></h2>
             <h2><Link to="Skills" spy={true} smooth={true} offset={-80} duration={500}>Habilidades</Link></h2>
             <h2><Link to="Experience" spy={true} smooth={true} offset={-80} duration={500}>Experiências</Link></h2>
@@ -20,7 +20,7 @@ export default function Header({language, setLanguage}) {
         </> :
         <>
             <div>
-            <h2><Link to="About" spy={true} smooth={true} offset={-80} duration={500}>About</Link></h2>
+            <h2><Link to="About" spy={true} smooth={true} offset={-80} duration={500}>Introduction</Link></h2>
             <h2><Link to="Education" spy={true} smooth={true} offset={-80} duration={500}>Education</Link></h2>
             <h2><Link to="Skills" spy={true} smooth={true} offset={-80} duration={500}>Skills</Link></h2>
             <h2><Link to="Experience" spy={true} smooth={true} offset={-80} duration={500}>Experience</Link></h2>
